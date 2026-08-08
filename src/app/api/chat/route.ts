@@ -37,6 +37,8 @@ Keep answers concise. Always answer in character as Rawad Abi Naim.`;
       ...messages
     ];
 
+    const model = process.env.OPENROUTER_MODEL || "openai/gpt-oss-120b";
+
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -44,19 +46,19 @@ Keep answers concise. Always answer in character as Rawad Abi Naim.`;
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "openai/gpt-oss-120b:free",
+        model,
         messages: openRouterMessages,
       })
     });
 
     const data = await response.json();
     
-    if (data.error) {
-      throw new Error(data.error.message || "Failed to fetch from OpenRouter");
+    if (!response.ok || data.error) {
+      throw new Error(data.error?.message || `OpenRouter request failed with status ${response.status}`);
     }
 
     return NextResponse.json({ 
-      message: data.choices[0].message 
+      message: data.choices?.[0]?.message || { role: 'assistant', content: 'No response generated.' }
     });
 
   } catch (error: any) {
