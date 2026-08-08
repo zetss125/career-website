@@ -20,7 +20,8 @@ export default function Home() {
               Bridging robust enterprise solutions with cutting-edge AI and unyielding cybersecurity protocols. Located in Oshawa, ON.
             </p>
             <div className="animate-fade-in delay-400" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <a href="#portfolio" className="btn btn-primary">View Portfolio</a>
+              <a href="#portfolio" className="btn btn-primary">View Professional Portfolio</a>
+              <a href="https://github.com/zetss125/professional-portfolio/blob/main/PROFESSIONAL-PORTFOLIO-NEW-RAWAD.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Open PDF Portfolio</a>
               <a href="mailto:rawadnm15@gmail.com" className="btn btn-secondary">Contact Me</a>
             </div>
           </div>
@@ -147,18 +148,23 @@ export default function Home() {
       <section id="portfolio" className="section" style={{ marginBottom: '4rem' }}>
         <div className="container">
           <div className="glass-panel" style={{ textAlign: 'center', padding: '4rem 2rem', background: 'linear-gradient(145deg, rgba(10,10,10,0.8) 0%, rgba(0,240,255,0.05) 100%)' }}>
-            <h2 style={{ marginBottom: '1rem', fontSize: '2.5rem' }}>Ready to Deploy?</h2>
-            <p style={{ maxWidth: '600px', margin: '0 auto 2rem auto', color: '#ccc', fontSize: '1.1rem' }}>
-              Review my detailed professional portfolio, featuring comprehensive technical projects, design architectures, and security audits.
+            <h2 style={{ marginBottom: '1rem', fontSize: '2.5rem' }}>Professional Portfolio Ready</h2>
+            <p style={{ maxWidth: '700px', margin: '0 auto 1.5rem auto', color: '#ccc', fontSize: '1.1rem' }}>
+              Explore my professional portfolio PDF showcasing AI software engineering, cybersecurity assessments, cloud and DevOps implementations, and enterprise-ready solutions.
             </p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 auto 2rem auto', maxWidth: '600px', color: '#ddd', lineHeight: 1.8 }}>
+              <li>• Full-stack AI applications and intelligent automation</li>
+              <li>• Cybersecurity analysis, risk evaluation, and remediation strategies</li>
+              <li>• Software development, systems integration, and technical leadership</li>
+            </ul>
             <a 
-              href="https://zetss125.github.io/professional-portfolio/PROFESSIONAL-PORTFOLIO-Rawad.pdf" 
+              href="https://github.com/zetss125/professional-portfolio/blob/main/PROFESSIONAL-PORTFOLIO-NEW-RAWAD.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-primary"
               style={{ fontSize: '1.2rem', padding: '1rem 3rem' }}
             >
-              Access Digital Portfolio
+              Open Professional Portfolio PDF
             </a>
           </div>
         </div>
