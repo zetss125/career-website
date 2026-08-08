@@ -21,7 +21,7 @@ export default function Home() {
             </p>
             <div className="animate-fade-in delay-400" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <a href="#portfolio" className="btn btn-primary">View Professional Portfolio</a>
-              <a href="/RAWAD%20ABI%20NAIM%20AI%20SOFT%20ENGINEER%20NEW.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Open PDF Portfolio</a>
+              <a href="/RAWAD%20ABI%20NAIM%20AI%20SOFT%20ENGINEER%20NEW.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Open New PDF Portfolio</a>
               <a href="mailto:rawadnm15@gmail.com" className="btn btn-secondary">Contact Me</a>
             </div>
           </div>
