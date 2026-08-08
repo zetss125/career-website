@@ -6,8 +6,8 @@ import ChatWidget from '@/components/ChatWidget';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'RAWAD ABI NAIM | Full Stack AI & Cybersecurity Professional',
-  description: 'Portfolio of Rawad Abi Naim, Full Stack AI Software Engineer, Cybersecurity Analyst, and Technology Professional.',
+  title: 'RAWAD ABI NAIM | Software & AI Developer | DevOps Engineer | Graphic Designer',
+  description: 'Portfolio of Rawad Abi Naim, covering software development, AI systems, DevOps, cybersecurity-related work, and graphic design.',
 };
 
 export default function RootLayout({

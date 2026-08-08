@@ -8,16 +8,16 @@ export default function Home() {
         <div className="container">
           <div style={{ maxWidth: '800px' }}>
             <p className="animate-fade-in" style={{ color: 'var(--accent-cyan)', fontWeight: 600, marginBottom: '1rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-              Initializing protocol... Welcome to the portfolio of
+              Professional portfolio of
             </p>
             <h1 className="animate-fade-in delay-100 gradient-text" style={{ marginBottom: '1rem' }}>
               RAWAD ABI NAIM
             </h1>
             <h3 className="animate-fade-in delay-200" style={{ color: '#aaa', fontWeight: 400, fontSize: '1.5rem', marginBottom: '2rem' }}>
-              Full Stack AI Software Engineer & Cybersecurity Analyst
+              Software & AI Developer | DevOps Engineer | Graphic Designer
             </h3>
             <p className="animate-fade-in delay-300" style={{ fontSize: '1.1rem', marginBottom: '3rem', maxWidth: '600px' }}>
-              Bridging robust enterprise solutions with cutting-edge AI and unyielding cybersecurity protocols. Located in Oshawa, ON.
+              I&apos;m drawn to technology and solving problems. My work spans software development, artificial intelligence, DevOps, and graphic design with a focus on practical, secure, and visually clear solutions. Ontario, Canada.
             </p>
             <div className="animate-fade-in delay-400" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <a href="#portfolio" className="btn btn-primary">View Professional Portfolio</a>
@@ -34,24 +34,30 @@ export default function Home() {
           <h2>[ About_Me ]</h2>
           <div className="glass-panel" style={{ marginTop: '3rem' }}>
             <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>
-              I am a results-driven technology and customer-facing professional with a broad spectrum of experience spanning <strong>cybersecurity, full stack AI development, IT operations, and sales leadership</strong>. 
+              I&apos;ve always been drawn to technology and solving problems. Over the years, I&apos;ve worked on everything from desktop applications to AI systems, always with a focus on making things that actually work for real people and real businesses.
             </p>
             <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
-              My mission is to engineer high-quality solutions that align technical capabilities with strategic business needs, delivering both security and scalability. Whether resolving complex IT challenges or developing intelligent applications, I bring an adaptable mindset and a commitment to excellence.
+              My background is a mix of software development, artificial intelligence, DevOps, and graphic design. I&apos;ve built web and mobile apps for employee management, customer registration, inventory tracking, accounting, and marketing analysis. I&apos;ve also developed AI-based systems for data analysis, prediction, and lead scoring using neural networks.
             </p>
-            
-            <h3 style={{ marginTop: '2rem', marginBottom: '1rem', color: 'var(--accent-cyan)' }}>Core Capabilities</h3>
+            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+              What I enjoy most is building practical, secure, and visually clear solutions. I&apos;m looking to grow my career as a Software Developer, AI Developer, DevOps Engineer, or Graphic Designer.
+            </p>
+
+            <h3 style={{ marginTop: '2rem', marginBottom: '1rem', color: 'var(--accent-cyan)' }}>Technical Skills</h3>
             <div className="badges-container">
-              <span className="badge">Cybersecurity & Risk Analysis</span>
-              <span className="badge">Full Stack Development</span>
-              <span className="badge">AI & Machine Learning</span>
-              <span className="badge">Networking (Cisco)</span>
-              <span className="badge">Cloud Computing</span>
-              <span className="badge">DevOps & MLOps</span>
-              <span className="badge">Git & Docker</span>
-              <span className="badge">Data Science</span>
-              <span className="badge">IT Support & Troubleshooting</span>
-              <span className="badge">Sales Strategy</span>
+              <span className="badge">Java</span>
+              <span className="badge">Python</span>
+              <span className="badge">R</span>
+              <span className="badge">JavaScript, HTML, CSS</span>
+              <span className="badge">Full-Stack Web Development</span>
+              <span className="badge">REST APIs & Backend Services</span>
+              <span className="badge">Machine Learning & Deep Learning</span>
+              <span className="badge">Business Intelligence Systems</span>
+              <span className="badge">Linux Systems</span>
+              <span className="badge">Git & Version Control</span>
+              <span className="badge">Backend Security & Authentication</span>
+              <span className="badge">Adobe Illustrator / Photoshop / InDesign</span>
+              <span className="badge">CAD & SolidWorks</span>
             </div>
           </div>
         </div>
@@ -60,46 +66,28 @@ export default function Home() {
       {/* EXPERIENCE SECTION */}
       <section id="experience" className="section">
         <div className="container">
-          <h2>[ Career_Journey ]</h2>
+          <h2>[ Featured_Projects ]</h2>
           <div style={{ marginTop: '4rem' }}>
             <div className="timeline">
-              
               <div className="timeline-item glass-panel">
                 <div className="timeline-content">
-                  <span className="date">Jun 2025 — Jan 2026</span>
-                  <h3>IT Technician / Office Administrator / Graphic Designer</h3>
-                  <div className="company">GWM Cleaning Services, Oshawa, ON</div>
-                  <p>Provided end-to-end IT support including hardware/software installation, troubleshooting, and network setup. Built and maintained websites and mobile applications. Designed branding and marketing materials. Handled administrative operations, inventory control, invoicing, and digital marketing initiatives.</p>
+                  <span className="date">Featured Project</span>
+                  <h3>Lead Generation Business Intelligence App</h3>
+                  <div className="company"><a href="https://zetss125.github.io/moving-leads-app/" target="_blank" rel="noopener noreferrer">https://zetss125.github.io/moving-leads-app/</a></div>
+                  <p>I built this project for clothing retail store owners who want to make better sense of their social media customers and improve marketing results. The application pulls engagement data from Facebook posts and uses a deep learning neural network to score each potential customer.</p>
+                  <p><strong>Main functions:</strong> lead scoring and ranking, dashboard for business users, data filtering and visualization.</p>
                 </div>
               </div>
 
               <div className="timeline-item glass-panel">
                 <div className="timeline-content">
-                  <span className="date">Feb 2025 — Jun 2025</span>
-                  <h3>Bank Representative</h3>
-                  <div className="company">PC Financial, Whitby, ON</div>
-                  <p>Opened and activated customer accounts and Mastercard credit cards. Delivered front-line customer service, resolved complaints, and met sales targets through ethical and compliant banking practices.</p>
+                  <span className="date">Featured Project</span>
+                  <h3>Retail Intelligence & Lead Prediction Engine</h3>
+                  <div className="company"><a href="https://zetss125.github.io/retail-ai-leads/" target="_blank" rel="noopener noreferrer">https://zetss125.github.io/retail-ai-leads/</a></div>
+                  <p>I developed a high-performance business intelligence and lead scoring system that connects raw social marketing data with actionable retail insights. It uses a custom machine learning pipeline to provide real-time probability scores for customer conversions.</p>
+                  <p><strong>Main functions:</strong> better lead scoring, dashboard, filtering and visualization, improved marketing efficiency, reduced advertising costs, web-based access.</p>
                 </div>
               </div>
-
-              <div className="timeline-item glass-panel">
-                <div className="timeline-content">
-                  <span className="date">Dec 2024 — Feb 2025</span>
-                  <h3>Cybersecurity Analyst (Freelance)</h3>
-                  <div className="company">InterGamma (Netherlands)</div>
-                  <p>Conducted web application security testing, identified vulnerabilities, and produced professional risk assessment reports with actionable remediation recommendations.</p>
-                </div>
-              </div>
-
-              <div className="timeline-item glass-panel">
-                <div className="timeline-content">
-                  <span className="date">May 2024 — Jan 2025</span>
-                  <h3>Sales Manager</h3>
-                  <div className="company">Rogers, North York, ON</div>
-                  <p>Led sales teams selling telecom services across Ontario. Developed sales strategies, managed territories, processed online orders, and ensured consistent customer satisfaction and performance.</p>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -108,38 +96,39 @@ export default function Home() {
       {/* EDUCATION SECTION */}
       <section id="education" className="section">
         <div className="container">
-          <h2>[ Education_&_Certs ]</h2>
+          <h2>[ Education_&_Background ]</h2>
           <div className="grid grid-cols-2" style={{ marginTop: '3rem' }}>
-            
             <div className="glass-panel">
               <h3 style={{ color: 'var(--accent-cyan)' }}>Education</h3>
               <ul style={{ listStyle: 'none', padding: 0, marginTop: '1.5rem' }}>
                 <li style={{ marginBottom: '1.5rem' }}>
-                  <strong>Graduate Certificate — Artificial Intelligence Analysis, Design & Implementation</strong><br/>
-                  <span style={{ color: '#aaa', fontSize: '0.9rem' }}>Durham College, Oshawa, ON (Jan 2025 - Aug 2025)</span>
+                  <strong>Bachelor of Mechatronics Engineering</strong><br/>
+                  <span style={{ color: '#aaa', fontSize: '0.9rem' }}>University of Balamand, Lebanon</span>
                 </li>
                 <li style={{ marginBottom: '1.5rem' }}>
-                  <strong>Bachelor of Nuclear Engineering</strong><br/>
-                  <span style={{ color: '#aaa', fontSize: '0.9rem' }}>Ontario Tech University, Oshawa, ON (Jan 2022 - Jan 2024)</span>
+                  <strong>Final Year Engineering Project</strong><br/>
+                  <span style={{ color: '#aaa', fontSize: '0.9rem' }}>Autonomous Drones — supervised by Dr. Gilbert Tekli</span>
                 </li>
                 <li>
-                  <strong>Bachelor of Mechatronics Engineering</strong><br/>
-                  <span style={{ color: '#aaa', fontSize: '0.9rem' }}>University of Balamand, Lebanon (Sep 2017 - Jul 2021)</span>
+                  <strong>Project Focus</strong><br/>
+                  <span style={{ color: '#aaa', fontSize: '0.9rem' }}>Design and simulation of a drone capable of flying autonomously from one coordinate location to another.</span>
                 </li>
               </ul>
             </div>
 
             <div className="glass-panel">
-              <h3 style={{ color: 'var(--accent-purple)' }}>Certifications & Training</h3>
+              <h3 style={{ color: 'var(--accent-purple)' }}>Additional Experience</h3>
               <div className="badges-container" style={{ marginTop: '1.5rem' }}>
-                <span className="badge">Cisco Introduction to Cybersecurity</span>
-                <span className="badge">CCNA Routing & Switching</span>
-                <span className="badge">Ethical Hacking (Udemy)</span>
-                <span className="badge">Advanced Python</span>
-                <span className="badge">Wireshark Network Analysis</span>
+                <span className="badge">Java Desktop Applications</span>
+                <span className="badge">Library Management System</span>
+                <span className="badge">Employee Registry System</span>
+                <span className="badge">Authentication System</span>
+                <span className="badge">Android Payment App</span>
+                <span className="badge">Python Security & Backend Projects</span>
+                <span className="badge">AI & Machine Learning Work</span>
+                <span className="badge">MATLAB / Simulink / Unreal Engine</span>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -150,12 +139,12 @@ export default function Home() {
           <div className="glass-panel" style={{ textAlign: 'center', padding: '4rem 2rem', background: 'linear-gradient(145deg, rgba(10,10,10,0.8) 0%, rgba(0,240,255,0.05) 100%)' }}>
             <h2 style={{ marginBottom: '1rem', fontSize: '2.5rem' }}>Professional Portfolio Ready</h2>
             <p style={{ maxWidth: '700px', margin: '0 auto 1.5rem auto', color: '#ccc', fontSize: '1.1rem' }}>
-              Explore my professional portfolio PDF showcasing AI software engineering, cybersecurity assessments, cloud and DevOps implementations, and enterprise-ready solutions.
+              This portfolio highlights software development, AI systems, DevOps thinking, cybersecurity-related work, and creative design work aligned with the new PDF document.
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 auto 2rem auto', maxWidth: '600px', color: '#ddd', lineHeight: 1.8 }}>
-              <li>• Full-stack AI applications and intelligent automation</li>
-              <li>• Cybersecurity analysis, risk evaluation, and remediation strategies</li>
-              <li>• Software development, systems integration, and technical leadership</li>
+              <li>• Software development and backend systems</li>
+              <li>• AI, machine learning, and business intelligence</li>
+              <li>• Security testing, automation, and practical engineering</li>
             </ul>
             <a 
               href="/RAWAD%20ABI%20NAIM%20AI%20SOFT%20ENGINEER%20NEW.pdf" 
