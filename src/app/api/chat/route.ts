@@ -1,5 +1,10 @@
 import { NextResponse } from 'next/server';
 
+const fallbackMessage = {
+  role: 'assistant',
+  content: 'The AI service is temporarily unavailable, but I can still help with Rawad’s background, skills, and portfolio highlights from the information on this site.'
+};
+
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
@@ -37,13 +42,18 @@ Keep answers concise. Always answer in character as Rawad Abi Naim.`;
       ...messages
     ];
 
-    const model = process.env.OPENROUTER_MODEL || "openai/gpt-oss-120b";
+    const apiKey = process.env.OPENROUTER_API_KEY;
+    const model = process.env.OPENROUTER_MODEL || 'openai/gpt-oss-120b';
 
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
+    if (!apiKey) {
+      return NextResponse.json({ message: fallbackMessage });
+    }
+
+    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+      method: 'POST',
       headers: {
-        "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        "Content-Type": "application/json"
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         model,
@@ -52,17 +62,17 @@ Keep answers concise. Always answer in character as Rawad Abi Naim.`;
     });
 
     const data = await response.json();
-    
+
     if (!response.ok || data.error) {
-      throw new Error(data.error?.message || `OpenRouter request failed with status ${response.status}`);
+      console.error('OpenRouter error:', data?.error);
+      return NextResponse.json({ message: fallbackMessage });
     }
 
-    return NextResponse.json({ 
-      message: data.choices?.[0]?.message || { role: 'assistant', content: 'No response generated.' }
+    return NextResponse.json({
+      message: data.choices?.[0]?.message || fallbackMessage
     });
-
   } catch (error: any) {
-    console.error("Chat API Error:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.error('Chat API Error:', error);
+    return NextResponse.json({ message: fallbackMessage }, { status: 500 });
   }
 }
