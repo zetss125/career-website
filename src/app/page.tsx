@@ -380,6 +380,29 @@ export default function Home() {
                 <li style={{ marginBottom: '1.5rem' }}>
                   <strong>Graduate Program, Artificial Intelligence Analysis, Design and Implementation</strong><br/>
                   <span style={{ color: '#aaa', fontSize: '0.9rem' }}>Durham College</span>
+                  <div style={{ marginTop: '1rem' }}>
+                    <strong style={{ color: 'var(--accent-cyan)', fontSize: '0.95rem' }}>Academic & Personal Projects</strong>
+                    <ul style={{ listStyle: 'none', padding: 0, marginTop: '0.75rem' }}>
+                      <li style={{ marginBottom: '1rem' }}>
+                        <strong style={{ fontSize: '0.95rem' }}>Lead Generation App (Business Intelligence System)</strong><br/>
+                        <a href="https://github.com/zetss125/SmartLeads-BI-Advanced" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-cyan)', fontSize: '0.85rem' }}>
+                          github.com/zetss125/SmartLeads-BI-Advanced
+                        </a>
+                        <p style={{ color: '#aaa', fontSize: '0.9rem', marginTop: '0.5rem', lineHeight: 1.6 }}>
+                          Web-based business intelligence platform that helps retailers identify, score, and prioritize high-value leads using AI-powered analytics and predictive scoring models.
+                        </p>
+                      </li>
+                      <li>
+                        <strong style={{ fontSize: '0.95rem' }}>Retail Intelligence & Lead Prediction Engine</strong><br/>
+                        <a href="https://zetss125.github.io/retail-ai-leads/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-cyan)', fontSize: '0.85rem' }}>
+                          zetss125.github.io/retail-ai-leads
+                        </a>
+                        <p style={{ color: '#aaa', fontSize: '0.9rem', marginTop: '0.5rem', lineHeight: 1.6 }}>
+                          Business Intelligence and AI powered Lead Prediction platform that transforms social media marketing data into real-time conversion probability scores and actionable retail insights.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li style={{ marginBottom: '1.5rem' }}>
                   <strong>Bachelor&apos;s Degree, Mechatronics Engineering</strong><br/>
