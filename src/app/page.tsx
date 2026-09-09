@@ -20,8 +20,8 @@ export default function Home() {
               I&apos;m drawn to technology and solving problems. My work spans software development, artificial intelligence, DevOps, and graphic design with a focus on practical, secure, and visually clear solutions. Ontario, Canada.
             </p>
             <div className="animate-fade-in delay-400" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <a href="#portfolio" className="btn btn-primary">View Professional Portfolio</a>
-              <a href="/newpdf.pdf?v=3" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Open New PDF Portfolio</a>
+              <a href="https://zetss125.github.io/professional-portfolio/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View Professional Portfolio</a>
+              <a href="/Rawad_Abi_Naim_Professional_Portfolio.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Open Portfolio PDF</a>
               <a href="mailto:rawadnm15@gmail.com" className="btn btn-secondary">Contact Me</a>
             </div>
           </div>
@@ -137,24 +137,35 @@ export default function Home() {
       <section id="portfolio" className="section" style={{ marginBottom: '4rem' }}>
         <div className="container">
           <div className="glass-panel" style={{ textAlign: 'center', padding: '4rem 2rem', background: 'linear-gradient(145deg, rgba(10,10,10,0.8) 0%, rgba(0,240,255,0.05) 100%)' }}>
-            <h2 style={{ marginBottom: '1rem', fontSize: '2.5rem' }}>Professional Portfolio Ready</h2>
+            <h2 style={{ marginBottom: '1rem', fontSize: '2.5rem' }}>Rawad Abi Naim Professional Portfolio</h2>
             <p style={{ maxWidth: '700px', margin: '0 auto 1.5rem auto', color: '#ccc', fontSize: '1.1rem' }}>
-              This portfolio highlights software development, AI systems, DevOps thinking, cybersecurity-related work, and creative design work aligned with the new PDF document.
+              This portfolio highlights software development, AI systems, DevOps thinking, cybersecurity-related work, and creative design work.
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 auto 2rem auto', maxWidth: '600px', color: '#ddd', lineHeight: 1.8 }}>
               <li>• Software development and backend systems</li>
               <li>• AI, machine learning, and business intelligence</li>
               <li>• Security testing, automation, and practical engineering</li>
             </ul>
-            <a 
-              href="/newpdf.pdf?v=3" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn btn-primary"
-              style={{ fontSize: '1.2rem', padding: '1rem 3rem' }}
-            >
-              Open Professional Portfolio PDF
-            </a>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a 
+                href="https://zetss125.github.io/professional-portfolio/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-primary"
+                style={{ fontSize: '1.2rem', padding: '1rem 3rem' }}
+              >
+                View Live Portfolio
+              </a>
+              <a 
+                href="/Rawad_Abi_Naim_Professional_Portfolio.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-secondary"
+                style={{ fontSize: '1.2rem', padding: '1rem 3rem' }}
+              >
+                Open Portfolio PDF
+              </a>
+            </div>
           </div>
         </div>
       </section>
