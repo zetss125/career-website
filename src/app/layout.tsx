@@ -6,8 +6,8 @@ import ChatWidget from '@/components/ChatWidget';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'RAWAD ABI NAIM | Software & AI Developer | DevOps Engineer | Graphic Designer',
-  description: 'Portfolio of Rawad Abi Naim, covering software development, AI systems, DevOps, cybersecurity-related work, and graphic design.',
+  title: 'RAWAD ABI NAIM | AI Software Engineer | Full Stack AI Developer',
+  description: 'AI Software Engineer building scalable intelligent systems, automation, and data driven solutions. Cloud-native AI, machine learning, cybersecurity, and full stack development.',
 };
 
 export default function RootLayout({
@@ -24,7 +24,9 @@ export default function RootLayout({
             <div className="logo gradient-text">RAN_</div>
             <div className="nav-links">
               <a href="#about">About</a>
-              <a href="#experience">Experience</a>
+              <a href="#experience">AI Projects</a>
+              <a href="#projects">Engineering</a>
+              <a href="#work">Experience</a>
               <a href="#education">Education</a>
               <a href="#portfolio">Portfolio</a>
             </div>
