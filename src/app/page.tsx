@@ -23,7 +23,7 @@ export default function Home() {
             </p>
             <div className="animate-fade-in delay-400" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <a href="https://zetss125.github.io/professional-portfolio/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View Professional Portfolio</a>
-              <a href="/RAWAD-ABI-NAIM-SOFTWARE-AI-PRI.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Open Resume PDF</a>
+              <a href="/RAWAD-ABI-NAIM-SOFTWARE-AI-ENGI-PRIM.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Open Resume PDF</a>
               <a href="mailto:rawadnm15@gmail.com" className="btn btn-secondary">Contact Me</a>
             </div>
           </div>
@@ -203,15 +203,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PORTFOLIO ENGINEERING PROJECTS */}
+      {/* PORTFOLIO & ROBOTICS ENGINEERING PROJECTS */}
       <section id="projects" className="section">
         <div className="container">
-          <h2>[ Engineering_&_Application_Projects ]</h2>
+          <h2>[ Robotics,_AI_&_Engineering_Projects ]</h2>
           <p style={{ marginTop: '1rem', color: '#aaa', maxWidth: '800px' }}>
-            Additional software engineering and application development work featured in the professional portfolio.
+            Featured embodied robotics, offline multimodal AI, and software engineering systems.
           </p>
           <div style={{ marginTop: '3rem' }}>
             <div className="timeline">
+              <div className="timeline-item glass-panel">
+                <div className="timeline-content">
+                  <span className="date">Character Robot Challenge · Embodied AI & Robotics</span>
+                  <h3>5-DOF Lamp Robot Character Simulation</h3>
+                  <div className="company">
+                    <a href="https://github.com/zetss125/lamp-robot-challenge" target="_blank" rel="noopener noreferrer">
+                      https://github.com/zetss125/lamp-robot-challenge
+                    </a>
+                  </div>
+                  <ul style={listStyle}>
+                    <li>Engineered an expressive, embodied lamp robot character inspired by Pixar&apos;s <em>Luxo Jr.</em>, capable of interacting naturally with humans using real-time computer vision, offline speech recognition, local language reasoning, dynamic physical motion, and multimodal sensory cues.</li>
+                    <li>Designed to run <strong>100% offline and locally</strong> on standard commodity hardware (Ubuntu 24.04 LTS, 4 CPU cores, 8 GB RAM, no discrete GPU required) for zero cloud latency and total privacy.</li>
+                    <li>Integrated perception pipeline featuring <strong>Moondream Vision-Language Model (VLM)</strong> via Ollama for object/scene understanding alongside real-time <strong>OpenCV Haar cascade face tracking</strong> with debounce hysteresis for robust interaction states.</li>
+                    <li>Implemented cognitive reasoning using a bounded local LLM (<strong>Qwen2:0.5B</strong> via Ollama) and offline voice interaction powered by <strong>Vosk</strong> English speech-to-text (<code>vosk-model-small-en-us</code>).</li>
+                    <li>Established an authoritative systems engineering boundary decoupling <strong>Laptop Cognition</strong> from an <strong>Authoritative Body Runtime</strong> communicating via strict JSON <code>BodyCommand</code> and <code>BodyResult</code> schemas over loopback TCP sockets (port 8765).</li>
+                    <li>Built 5-DOF physics and kinematic simulation in <strong>PyBullet</strong> with URDF modeling (<code>dummy_lamp_5dof.urdf</code>), lamp shade RGB illumination cues, Linux PCM audio tones, and TTS speech coordination.</li>
+                    <li>Implemented a goal-directed observe-act-reobserve state machine with structured telemetry logging (<code>measurements.jsonl</code>) and full test coverage with <strong>21 unit and integration tests</strong> across protocol, transport, receiver, action controller, and runtime verification.</li>
+                  </ul>
+                </div>
+              </div>
+
               <div className="timeline-item glass-panel">
                 <div className="timeline-content">
                   <span className="date">Portfolio Project</span>
@@ -254,7 +275,22 @@ export default function Home() {
             <div className="timeline">
               <div className="timeline-item glass-panel">
                 <div className="timeline-content">
-                  <span className="date">Jul 2026 - Present</span>
+                  <span className="date">Aug 2026 - Sep 2026</span>
+                  <h3>Cybersecurity Analyst, Freelance</h3>
+                  <div className="company">Maple Linens</div>
+                  <ul style={listStyle}>
+                    <li>Conducted penetration testing on full-stack web application using Burp Suite and OWASP ZAP, following OWASP Top 10 methodology, which uncovered critical security gaps that were addressed before launch.</li>
+                    <li>Performed risk assessment and risk prioritization, classifying vulnerabilities by business impact, likelihood, and severity to support management decision making and remediation planning.</li>
+                    <li>Improved the application&apos;s overall security posture by identifying attack vectors that could have resulted in unauthorized access, sensitive data exposure, or service disruption.</li>
+                    <li>Assisted in strengthening secure development practices by providing practical mitigation guidance for authentication, authorization, input validation, and session security.</li>
+                    <li>Contributed to the organization&apos;s Risk Management Operations by helping reduce operational and business risks through proactive vulnerability identification and security assurance activities.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="timeline-item glass-panel">
+                <div className="timeline-content">
+                  <span className="date">Jul 2026 - Aug 2026</span>
                   <h3>Illustrator & Editor</h3>
                   <div className="company">Freelance</div>
                   <ul style={listStyle}>
@@ -474,7 +510,7 @@ export default function Home() {
                 Open Portfolio PDF
               </a>
               <a
-                href="/RAWAD-ABI-NAIM-SOFTWARE-AI-PRI.pdf"
+                href="/RAWAD-ABI-NAIM-SOFTWARE-AI-ENGI-PRIM.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
