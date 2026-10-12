@@ -465,6 +465,15 @@ export default function Home() {
                 View Live Portfolio
               </a>
               <a
+                href="/Rawad_Abi_Naim_Professional_Portfolio.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+                style={{ fontSize: '1.2rem', padding: '1rem 3rem' }}
+              >
+                Open Portfolio PDF
+              </a>
+              <a
                 href="/RAWAD-ABI-NAIM-SOFTWARE-AI-PRI.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
